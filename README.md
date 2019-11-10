@@ -6,9 +6,9 @@ NORHALIMAH BINTI MOHAMAD RAMLI(255227)<br />
 3.The number of followers.<br />
 4.The number of stars.<br /><p>
 Result:<br />
-<img src="">
+
 <br />
-UML Class Diagram : <br />
+UML Class Diagram :<img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/uml_asg2.png"> <br />
 
 <br />Youtube Presentation<br />
   
