@@ -8,7 +8,7 @@ NORHALIMAH BINTI MOHAMAD RAMLI(255227)<br />
 Result:<br />
 
 <br />
-UML Class Diagram :<img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/uml_asg2.png"> <br />
+UML Class Diagram :<img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/uml_asg2.png" width="500" alt="accessibility text"> <br />
 
 <br />Youtube Presentation<br />
   
