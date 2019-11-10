@@ -30,8 +30,28 @@ public class FollowerDetails {
         this.countFg = countFg;
     }
 
+    public int getN() {
+        return n;
+    }
+
     public String getId() {
         return id;
+    }
+
+    public int getCountR() {
+        return countR;
+    }
+
+    public int getCountFg() {
+        return countFg;
+    }
+
+    public int getCountFr() {
+        return countFr;
+    }
+
+    public int getCountS() {
+        return countS;
     }
 
     public void listFollower(int n,String id, int countR,int countFg, int countFr, int countS) throws IOException {
@@ -41,21 +61,34 @@ public class FollowerDetails {
     }
 
     public void FollowerList() {
-
-        for (FollowerDetails flist : f) {
-            System.out.println(flist.getId( ));
-        }
         try {
             XSSFWorkbook workbook = new XSSFWorkbook( );
 
             XSSFSheet sheet = workbook.createSheet("follower details list");// creating a blank sheet
-            int rownum = 0;
+
+
+            Row row = sheet.createRow(0);
+            Cell cell = row.createCell(0);
+            Cell cell1 = row.createCell(1);
+            Cell cell2 = row.createCell(2);
+            Cell cell3 = row.createCell(3);
+            Cell cell4 = row.createCell(4);
+            Cell cell5 = row.createCell(5);
+            cell.setCellValue("No");
+            cell1.setCellValue("Login ID");
+            cell2.setCellValue("Number of repositories");
+            cell3.setCellValue("Number of Following");
+            cell4.setCellValue("Number of Followers");
+            cell5.setCellValue("Number of Stars");
+            int rownum = 1;
             for (FollowerDetails listf : f) {
-                Row row = sheet.createRow(rownum++);
-                createList(listf, row);
+                Row row1 = sheet.createRow(rownum++);
+                createList(listf, row1);
 
             }
+
             FileOutputStream out = new FileOutputStream(new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\Report.xlsx")); // file name with path
+            sheet.autoSizeColumn(5);
             workbook.write(out);
             out.close( );
 
@@ -66,14 +99,21 @@ public class FollowerDetails {
 
     public static void createList(FollowerDetails f, Row row) // creating cells for each row
     {
+
         Cell cell = row.createCell(0);
-        cell.setCellValue(f.getId( ));
+        Cell cell1 = row.createCell(1);
+        Cell cell2 = row.createCell(2);
+        Cell cell3 = row.createCell(3);
+        Cell cell4 = row.createCell(4);
+        Cell cell5 = row.createCell(5);
+
+        cell.setCellValue(f.getN( ));
+        cell1.setCellValue(f.getId( ));
+        cell2.setCellValue(f.getCountR( ));
+        cell3.setCellValue(f.getCountFg( ));
+        cell4.setCellValue(f.getCountFr( ));
+        cell5.setCellValue(f.getCountS( ));
     }
 
-    public void FollowerL() {
-        for (FollowerDetails flist : f) {
-            System.out.println(flist.getId( ));
-        }
     }
 
-}

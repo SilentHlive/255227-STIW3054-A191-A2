@@ -18,15 +18,17 @@ public class Main extends Thread{
     public static void main(String[] args) {
         Main ts = new Main();
         Thread t = new Thread(ts);
-        System.out.printf("| %-5s| %-40s| %-25s| %-25s| %-25s| %-25s|\n", "No", "Login ID", "Number of Repositories", "Number of Followings","Number of Followers","Number of Stars");
+        System.out.printf("| %-5s| %-40s| %-25s| %-25s| %-25s| %-25s|\n", "No", "Login ID", "Number of Repositories", "Number of Following","Number of Followers","Number of Stars");
+        System.out.printf("| %-5s| %-40s| %-25s| %-25s| %-25s| %-25s|\n", "-----", "----------------------------------", "----------------------", "---------------------", "----------------------", "-----------------------");
         t.start();
+
     }
 
     public void run() {
         synchronized (this) {
             try
             {
-                File file = new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\Report.xlsx");   //creating a new file instance
+                File file = new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\List of Follower.xlsx");   //creating a new file instance
                 FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file
                 //creating Workbook instance that refers to .xlsx file
                 XSSFWorkbook wb = new XSSFWorkbook(fis);
@@ -62,6 +64,7 @@ public class Main extends Thread{
                 e.printStackTrace();
             }
         }
+        follower.FollowerList();
     }
 
     static int readFollower(String fid) throws IOException {
