@@ -66,7 +66,6 @@ public class FollowerDetails {
 
             XSSFSheet sheet = workbook.createSheet("follower details list");// creating a blank sheet
 
-
             Row row = sheet.createRow(0);
             Cell cell = row.createCell(0);
             Cell cell1 = row.createCell(1);
@@ -87,8 +86,11 @@ public class FollowerDetails {
 
             }
 
-            FileOutputStream out = new FileOutputStream(new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\Report.xlsx")); // file name with path
-            sheet.autoSizeColumn(5);
+            FileOutputStream out = new FileOutputStream(new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\excel\\Report.xlsx")); // file name with path
+            for(int j =0; j<7;j++){
+                sheet.autoSizeColumn(j);
+            }
+
             workbook.write(out);
             out.close( );
 

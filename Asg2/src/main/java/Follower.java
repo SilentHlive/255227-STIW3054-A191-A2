@@ -45,7 +45,7 @@ public class Follower {
                 createList(listf, row);
 
             }
-            FileOutputStream out = new FileOutputStream(new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\List of Follower.xlsx")); // file name with path
+            FileOutputStream out = new FileOutputStream(new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\excel\\List of Follower.xlsx")); // file name with path
             workbook.write(out);
             out.close( );
 

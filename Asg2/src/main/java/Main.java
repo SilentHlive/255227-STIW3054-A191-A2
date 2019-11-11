@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public class Main extends Thread{
+
     public static String fid;
     public static int x=1,countR, countFg, countFr, countS;
     public static FollowerDetails follower = new FollowerDetails();
@@ -67,7 +68,7 @@ public class Main extends Thread{
         follower.FollowerList();
     }
 
-    static int readFollower(String fid) throws IOException {
+    static int readFollower(String fid) throws IOException, InterruptedException {
         //System.out.println(fid);
         String href = "https://github.com/"+fid+"?tab=followers";
         String href2="";
@@ -81,6 +82,7 @@ public class Main extends Thread{
             Elements div = html.select("div.position-relative");
             Elements list = div.select("a");
             for (Element link : list) {
+                Thread.sleep(100);
                 href = link.attr("href");
                 if (href.contains("%") || (href.contains("?")) || (href.contains("/pricing")) )
                     link.remove( );
@@ -105,7 +107,7 @@ public class Main extends Thread{
         return count;
     }
 
-    static int readFollowing(String fid) throws IOException {
+    static int readFollowing(String fid) throws IOException, InterruptedException {
         String href = "https://github.com/"+fid+"?tab=following";
         String href2="";
         String l = href;
@@ -118,6 +120,7 @@ public class Main extends Thread{
             Elements div = html.select("div.position-relative");
             Elements list = div.select("a");
             for (Element link : list) {
+                Thread.sleep(100);
                 href = link.attr("href");
                 if (href.contains("%") || (href.contains("?")) || (href.contains("/pricing")) )
                     link.remove( );
@@ -142,7 +145,7 @@ public class Main extends Thread{
         return count;
     }
 
-    static int readRepo(String fid) throws IOException {
+    static int readRepo(String fid) throws IOException, InterruptedException {
         String href = "https://github.com/"+fid+"?tab=repositories";
         String href2="";
         String l = href;
@@ -157,6 +160,7 @@ public class Main extends Thread{
             if(!hh.isEmpty()){  n=0; l=null; break; }
             else{
             for (Element link : ll) {
+                Thread.sleep(100);
                 href = link.attr("href");
                 if(href.contains("%") || (href.contains("?")) || (href.contains("/pricing")))
                     link.remove();
@@ -183,7 +187,7 @@ public class Main extends Thread{
         return count;
     }
 
-    static int readStars(String fid) throws IOException {
+    static int readStars(String fid) throws IOException, InterruptedException {
         String href = "https://github.com/"+fid+"?tab=stars";
         String href2="";
         String l = href;
@@ -200,6 +204,7 @@ public class Main extends Thread{
             if(!hh.isEmpty()){  n=0; l=null; break; }
             else{
             for (Element link : list) {
+                Thread.sleep(100);
                 href = link.attr("href");
                 if (href.equals(href2)) link.remove( );
                 else {
