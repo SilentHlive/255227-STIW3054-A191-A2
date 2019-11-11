@@ -6,14 +6,14 @@ NORHALIMAH BINTI MOHAMAD RAMLI(255227)<br />
 3.The number of followers.<br />
 4.The number of stars.<br /><p>
 <p>Result : <br />
- <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/1.PNG" width="400" height ="400" alt="accessibility text"><br/>
-  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/2.PNG" width="400" height ="400" alt="accessibility text"><br/>
-  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/3.PNG" width="400" height ="400" alt="accessibility text"><br/>
-  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/4.PNG" width="400" height ="400" alt="accessibility text"><br/>
-  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/5.PNG" width="400" height ="400" alt="accessibility text"><br/></p>
+ <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/1.PNG" width="600" height ="500" alt="accessibility text"><br/>
+  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/2.PNG" width="600" height ="500" alt="accessibility text"><br/>
+  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/3.PNG" width="600" height ="500" alt="accessibility text"><br/>
+  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/4.PNG" width="600" height ="500" alt="accessibility text"><br/>
+  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/5.PNG" width="600" height ="500" alt="accessibility text"><br/></p>
 <br />
 <p>UML Class Diagram : <br/>
-  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/uml_asg2.png" width="500" height ="600" alt="accessibility text"></p> <br />
+  <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/uml_asg2.png" width="500" height ="400" alt="accessibility text"></p> <br />
 
 <br />Youtube Presentation : <br />
   
