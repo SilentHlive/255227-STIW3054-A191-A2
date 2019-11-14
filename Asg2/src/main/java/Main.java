@@ -29,7 +29,7 @@ public class Main extends Thread{
         synchronized (this) {
             try
             {
-                File file = new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\List of Follower.xlsx");   //creating a new file instance
+                File file = new File("C:\\Users\\HALIMAH\\IdeaProjects\\255227-STIW3054-A191-A2\\excel\\List of Follower.xlsx");   //creating a new file instance
                 FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file
                 //creating Workbook instance that refers to .xlsx file
                 XSSFWorkbook wb = new XSSFWorkbook(fis);
