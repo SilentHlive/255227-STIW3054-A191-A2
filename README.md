@@ -16,7 +16,7 @@ NORHALIMAH BINTI MOHAMAD RAMLI(255227)<br />
   <img src="https://github.com/SilentHlive/255227-STIW3054-A191-A2/blob/master/img/uml_asg2.png" width="500" height ="600" alt="accessibility text"></p> <br />
 
 Youtube Presentation : <br />
-https://youtu.be/VLcZ5Vriw6o < br />
+https://youtu.be/VLcZ5Vriw6o <br />
   
 References : <br/>
 A. Batra, “Export from a list containing objects to excel file in java,” findnerd, 29-Mar-2016. Retrieved from http://findnerd.com/list/view/Export-from-a-list-containing-objects-to-excel-file-in-java/17491/.<br/>
