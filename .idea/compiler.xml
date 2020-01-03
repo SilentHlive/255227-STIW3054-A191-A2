@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Asg2" />
+        <module name="_255227_Asg2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Asg2" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
